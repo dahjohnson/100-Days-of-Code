@@ -1,0 +1,6 @@
+print("Welcome to the Tip Calculator!")
+Total = float(input("What was the total bill? $"))
+Tip = int(input("How much tip would you like to give? 10, 12, or 15? $"))
+People =  int(input("How many people to split the bill?"))
+Pay = "{:.2f}".format(int((Total / People) * (1 + (Tip / 100))))
+print(f"Each person should pay: ${Pay}")
